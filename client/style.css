@@ -1,0 +1,252 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px){
+  #app-view{
+    height: 80%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+  #app-view{
+    height: 90%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  #app-view{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#app-view{
+  display:flex;
+  flex-direction: column;
+}
+
+#app-menu{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#app-menu>*:hover{
+background-color: #7c75ff;
+color: #f8fa89;
+}
+
+#app-menu>li:hover .menu-image{
+  filter:invert(80%) sepia(57%) saturate(315%) hue-rotate(13deg) brightness(112%) contrast(96%);
+}
+
+.menu-item{
+  list-style-type: none;
+  color:white;
+  text-align: center;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.03em;
+}
+
+.menu-item > a{
+  display: flex;
+  text-align: center;
+}
+.menu-item > a > *{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+.menu-image{
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
+
+#page-view{
+  height: 100%;
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-top: none;
+}
+
+.room-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: coral;
+  padding:0;
+  margin-top: 0;
+}
+
+.room-list>li{
+  background-color: #ffe7e6;
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: #bababa;
+}
+
+.room-list>li:hover{
+  background-color: #d6c2c1;
+}
+
+.room-list > li > a > img{
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+
+.room-list > li >a{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.page-control{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top:auto;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 40px;
+}
+
+#room-input{
+  margin-right: 10px;
+  height: 15px;
+}
+
+#create-room-button{
+  margin-left: 10px;
+  height: 30px;
+}
+
+
+
+/* chat ************************************************/
+.room-name{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-self: flex-start;
+  background-color: #ffe7e6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: teal;
+}
+
+.message-list{
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: white;
+  margin-bottom: 15px;
+  width: 90%;
+  align-self: flex-start;
+  border-radius: 10px;
+}
+
+.my-message{
+  background-color: #73bbff;
+  align-self: flex-end;
+}
+
+.message-user{
+  font-weight:bold;
+}
+
+#chat-textarea{
+  margin-right: 10px;
+  height: 100%;
+  flex: 1;
+  resize: none;
+  box-sizing: border-box;
+}
+
+#chat-send{
+  height: 100%;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+/* profile *****************************************************/
+
+.form-field{
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-top: none;
+  border-color: #d9d9d9;
+  box-sizing: border-box;
+  padding: 30px;
+  justify-content: flex-start;
+  font-size: large;
+}
+
+.form-field > *{
+  margin-right: 20px ;
+}
+
+.form-field > textarea{
+  height: 100px;
+  width:40%;
+  box-sizing: border-box;
+}
+
+#save{
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+}
