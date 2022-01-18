@@ -7,17 +7,17 @@ A Clone of Repository for CPEN391 CPEN400A Group Chat Progressive Web App Projec
 ## Images
  
 Main menu:
- <img src="screenshots/main.png">
+ <img src="screenshots/main.PNG">
  
 Chat view:
- <img src="screenshots/chats.png">
+ <img src="screenshots/chats.PNG">
 
 Ensure app still works when resized:
- <img src="screenshots/resize.png">
+ <img src="screenshots/resize.PNG">
 
 Add new room:
- <img src="screenshots/new_room.png">
+ <img src="screenshots/new_room.PNG">
 
 Edit Profile:
- <img src="screenshots/profileg.png">
+ <img src="screenshots/profileg.PNG">
 
