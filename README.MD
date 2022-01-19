@@ -1,6 +1,6 @@
 # CPEN400A Group Chat Progressive Web App Project
 
-A Clone of Repository for CPEN391 CPEN400A Group Chat Progressive Web App Project
+A Clone of Repository for CPEN400A Group Chat Progressive Web App Project
  
 # Written in Javascript, HTML, CSS. Backend uses Node.js, Express.js, Websockets and Mongodb NOSQL database
  
